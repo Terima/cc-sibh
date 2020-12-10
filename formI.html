@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link media="all" type="text/css" rel="stylesheet" href="css/cssform.css">
+    </head>
+<body>
+    
+    <div class="atas">
+        <a href="indexadmin.php" style="color:white">Tampil Data</a>
+    </div>
+    <h1>Tambah Berita</h1>
+   
+    <form name="frmAdd" action="tambahI.php" method="POST" enctype="multipart/form-data">
+    
+    <label>Judul: </label><br/>
+    <input type="text" name="judul" required /><br/><br/>
+      
+    <label>Gambar: </label><br/>
+    <input type="file" name="gbr" /><br/><br/>
+
+    <label>Isi: </label><br/>
+    <textarea name="isi" required> </textarea>  <br/><br/>
+    
+    <input name="tambahdata" type="submit" value="Tambah" >
+     </form></body>
+    </html>
