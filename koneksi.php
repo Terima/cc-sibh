@@ -1,5 +1,4 @@
 <?php 
-
     $host = 'remotemysql.com';
     $db = '3nVCoE0ncB';
     $user = '3nVCoE0ncB';
@@ -10,7 +9,7 @@
 
     try { 
         $pdo_conn = new PDO($dsn, $user, $pass);
-        array(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION,PDO::ATTR_PERSISTENT => true)); 
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } 
 
     catch(PDOException $e){ 
