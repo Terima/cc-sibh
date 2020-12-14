@@ -8,8 +8,8 @@
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
     try { 
-        $pdo = new PDO($dsn, $user, $pass);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdo_conn = new PDO($dsn, $user, $pass);
+        $pdo_conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } 
 
     catch(PDOException $e){ 
