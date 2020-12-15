@@ -1,25 +1,26 @@
 <html>
     <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link media="all" type="text/css" rel="stylesheet" href="css/cssform.css">
     </head>
 <body>
     
     <div class="atas">
-        <a href="indexadmin.php" style="color:white">Tampil Data</a>
+        <a href="indexadmin.php"> <i class="fas fa-home"> Beranda</i></a>
     </div>
     <h1>Tambah Berita</h1>
    
     <form name="frmAdd" action="tambahI.php" method="POST" enctype="multipart/form-data">
     
-    <label>Judul: </label><br/>
+    <label>Judul: </label>
     <input type="text" name="judul" required /><br/><br/>
       
     <label>Gambar: </label><br/>
     <input type="file" name="gbr" /><br/><br/>
 
-    <label>Isi: </label><br/>
+    <label>Isi: </label>
     <textarea name="isi" required> </textarea>  <br/><br/>
     
-    <input name="tambahdata" type="submit" value="Tambah" >
+    <button type="submit"> Tambah </button>
      </form></body>
     </html>

@@ -3,14 +3,14 @@
         <meta charset="utf-8">
         <title>Login</title>
         <link rel="icon" href="">
-        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
     </head>
 
     <body class="li">        
         <div class="login">
         <form action="ceklogin.php" method="post">
             <br>
-            <center><img src="images/logo sistem.png" width="280px" height="50px"></center>
+            <center><img src="images/logo sistem.png" width="285px" height="50px"></center>
             <div class="text">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <input type="text" name="username" required placeholder="Username"/>

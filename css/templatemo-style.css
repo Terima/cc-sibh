@@ -64,12 +64,12 @@ html {
   transition: all 0.4s ease;
 }
 a {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #fff;
+  color: black;
   outline: none;
   text-decoration: underline;
 }
@@ -642,108 +642,18 @@ video {
 /*==============================================
 08. CONTACT BLOCK CSS
 ================================================*/
-::-webkit-input-placeholder {
-  color:#fff !important;
-  opacity:1;
-}
-::-moz-placeholder {
-  color:#fff !important;
-  opacity:1;
-}
-:-ms-input-placeholder {
-  color:#fff !important;
-  opacity:1;
-}
-:-moz-placeholder {
-  color:#fff !important;
-  opacity:1;
-}
-.input-field {
-  margin-bottom:15px;
-}
-.form-control {
-  height: 50px;
-  color:#fff;
-  border: none;
-  background:rgba(250,250,250,0.05);
-  border: 1px solid rgba(250,250,250,0.5);
-  border-radius: 10px;
-  padding:4px 22px;
-  font-size:14px;
-  margin-bottom: 30px;
-}
-.form-control:focus {
-  box-shadow:none;
-  outline:none;
-  background:rgba(0,0,0,0.05);
-  border: 1px solid rgba(250,250,250,1);
-  color:#fff;
-}
-.index .form-control.form-control-dark {
-  background: rgba(250,250,250, 0.75);
-  color: #fff;
-}
-.index .form-control.form-control-dark:focus {
-  background: rgba(54, 40, 158, 0.85);
-  color: #fff;
-}
-.index .form-control.form-control-dark::-webkit-input-placeholder {
-  color: #fff !important;
-}
-.index .form-control.form-control-dark::-moz-placeholder {
-  color:#fff !important;
-}
-.index .form-control.form-control-dark:-ms-input-placeholder {
-  color:#fff !important;
-}
-.index .form-control.form-control-dark:-moz-placeholder {
-  color:#fff !important;
-}
-.form-control.form-control-dark:focus {
-  background: rgba(0, 0, 0, 0.2);
-}
-.form-control.form-control-dark {
-  background: rgba(0, 0, 0, 0.1);
-  color: #222;
-  border: none;
-}
-.form-control.form-control-dark::-webkit-input-placeholder {
-  color:#222 !important;
-  opacity:0.7;
-}
-.form-control.form-control-dark::-moz-placeholder {
-  color:#222 !important;
-  opacity:0.7;
-}
-.form-control.form-control-dark:-ms-input-placeholder {
-  color:#222 !important;
-  opacity:0.7;
-}
-.form-control.form-control-dark:-moz-placeholder {
-  color:#222 !important;
-  opacity:0.7;
-}
-textarea.form-control {
-  height:123px;
-  padding-top:15px;
-}
+
 .contact-section .btn {
   width:100%;
 }
 .contact-box {
   text-align:center;
+  margin-left: 18%;
 }
 .contact-box h4 {
   font-size:24px;
 }
-.contact-box h4:after {
-  content:'';
-  display:block;
-  width:50px;
-  height:2px;
-  background:#fff;
-  margin:12px 0;
-}
+
 .contact-row {
   display: flex;
   -webkit-box-align: center;
@@ -755,6 +665,7 @@ textarea.form-control {
   border-radius: 10px;
   padding: 30px;
   font-weight: 700;
+
 }
 .contact-row i {
   width:55px;
@@ -851,63 +762,5 @@ textarea.form-control {
   border-radius: 3px;
 }
 
-#tabledata {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
-    background: #eaebec;
-    border: #ccc 1px solid;
-  }
 
-  table th {
-    padding: 15px 35px;
-    border-left:1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-    background: #ededed;
-  }
-   
-  table th:first-child{  
-    border-left:none;  
-  }
-   
-  table tr {
-    text-align: center;
-    padding-left: 20px;
-  }
-   
-  table td:first-child {
-    text-align: left;
-    padding-left: 20px;
-    border-left: 0;
-  }
-   
-  table td {
-    padding: 15px 35px;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    border-left: 1px solid #e0e0e0;
-    background: #fafafa;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
-    background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
-  }
-   
-  table tr:last-child td {
-    border-bottom: 0;
-  }
-   
-  table tr:last-child td:first-child {
-    -moz-border-radius-bottomleft: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-  }
-   
-  table tr:last-child td:last-child {
-    -moz-border-radius-bottomright: 3px;
-    -webkit-border-bottom-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-  }
-   
-  table tr:hover td {
-    background: black;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
-    background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
-  }
+  

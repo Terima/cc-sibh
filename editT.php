@@ -9,16 +9,17 @@ $result = $stmt->fetch();
 ?>
 <html>
     <head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link media="all" type="text/css" rel="stylesheet" href="css/cssform.css">
     </head>
 <body>
     
     <div class="atas">
-        <a href="indexadmin.php" style="color:white">Tampil Data</a>
+        <a href="indexadmin.php"><i class="fas fa-home"> Beranda</i></a>
     </div>
 <h1>Ubah Data Barang Temuan</h1>
 <form name="frmAdd" action="updateT.php" method="POST" enctype="multipart/form-data">
-    <label>Nama Barang: </label><br/>
+    <label>Nama Barang: </label>
     <input type="text" name="nama_barang" readonly value="<?php echo $result['nama_barang']; ?>" required /><br/><br/>
     <label>penemu: </label><br/>
     <input type="text" name="penemu" value="<?php echo $result['penemu']; ?>" required /><br/><br/>
@@ -30,7 +31,8 @@ $result = $stmt->fetch();
     <input type="file" name="gbr" value="<?php echo $result['gbr']; ?>" required/><br/><br/>
     <label>Deskripsi: </label><br/>
     <textarea name="deskripsi"><?php echo $result['deskripsi']; ?></textarea> <br/><br/>
-    <input name="save_record" type="submit" value="Save" class="demo-form-submit">
+    <button type="submit"> Save </button>
+
     
 </form>
 

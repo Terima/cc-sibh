@@ -33,6 +33,9 @@ https://templatemo.com/tm-528-elegance
 
     <link rel="stylesheet" href="css/responsive.css">
 
+    <link rel="stylesheet" href="css/table user.css">
+
+
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo ulm.png"> 
 
     </head>
@@ -95,40 +98,36 @@ https://templatemo.com/tm-528-elegance
                                 <h2>Informasi</h2>
                             </div>
                             <div class="gallery-section">
-                                <div class="gallery-list owl-carousel">
-                                <?php
+                                            <?php
 $stmt = $pdo_conn->prepare("SELECT * FROM berita ORDER BY id DESC");
 $stmt->execute();
 $result = $stmt->fetchAll();
 ?>
-<div id="tabledata">
+<div id="tableberita">
+<table>
 <tbody>
 <?php
 if(!empty($result)) { 
 foreach($result as $row) {
 ?>
-    <tr>
-        <td><?php echo $row["judul"]; ?></td>
-       
-        <td><?php echo "<img src='images/$row[gambar]'/>";?> <br>
-        <?php echo $row["isi"]; ?></td></td>
-
-    </tr>
+<tr>
+        <h3><?php echo $row["judul"]; ?></h3> </br>
+        <?php echo "<img src='images/$row[gambar]'/>";?> </br>
+        <?php echo $row["isi"]; ?></br></br></br>
+</tr>
 <?php
 }
 }
 ?>
 </tbody>
 </table>
-</div>
-                                </div>
+</div>        
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
 
             <?php
             $stmt = $pdo_conn->prepare("SELECT * FROM barang_temuan ORDER BY id DESC");
@@ -153,12 +152,12 @@ $result = $stmt->fetchAll();
 <table border="1">
 <thead>
     <tr>
-    <th>nama_barang</th>
-    <th>pemilik</th>
-    <th>kontak pemilik</th>
-    <th>tanggal</th>
-    <th>gambar</th>
-    <th>deskripsi</th>
+    <th>Nama Barang</th>
+    <th>Pemilik</th>
+    <th>Kontak Pemilik</th>
+    <th>Tanggal</th>
+    <th>Gambar</th>
+    <th>Deskripsi</th>
     </tr>
 </thead>
 <tbody>
@@ -208,12 +207,12 @@ $result = $stmt->fetchAll();
 <table border="1">
 <thead>
     <tr>
-    <th>nama_barang</th>
-    <th>penemu</th>
-    <th>kontak penemu</th>
-    <th>tanggal</th>
-    <th>gambar</th>
-    <th>deskripsi</th>
+    <th>Nama Barang</th>
+    <th>Penemu</th>
+    <th>Kontak Penemu</th>
+    <th>Tanggal</th>
+    <th>Gambar</th>
+    <th>Deskripsi</th>
     </tr>
 </thead>
 <tbody>
@@ -254,7 +253,6 @@ foreach($result as $row) {
                                 </div>
                                 <div class="contact-section">
                                     <div class="row">
-                                        <div class="col-md-6 animate" data-animate="fadeInUp">
                                             <div class="contact-box">
                                                 <div class="contact-row">
                                                     <i class="fa fa-map-marker"></i> Jl. Brigadir Jenderal H. Hasan Basry, Banjarmasin, Kalimantan Selatan - 70123

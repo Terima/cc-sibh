@@ -32,6 +32,8 @@ https://templatemo.com/tm-528-elegance
     <link rel="stylesheet" href="css/templatemo-style.css">
 
     <link rel="stylesheet" href="css/responsive.css">
+    
+    <link rel="stylesheet" href="css/table admin.css">
 
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo ulm.png"> 
 
@@ -92,21 +94,22 @@ https://templatemo.com/tm-528-elegance
                         <div class="col-md-8 wide-col-laptop">
                             <div class="title-block animate" data-animate="fadeInUp">
                                 <h2>Informasi</h2>
-                                <a href="formI.html">Tambah Informasi</a>
+                                <a href="formI.html">Tambah Berita dan Himbauan</a>
                             </div>
                             <div class="gallery-section">
-                                <div class="gallery-list owl-carousel">
+                                
                                     <?php
 $stmt = $pdo_conn->prepare("SELECT * FROM berita ORDER BY id DESC");
 $stmt->execute();
 $result = $stmt->fetchAll();
 ?>
-<div id="tabledata">
+<div id="tableberita">
 <table>
 <thead>
     <tr>
     <th>Judul</th>
     <th>Isi Konten</th>
+    <th>Aksi</th>
     </tr>
 </thead>
 <tbody>
@@ -118,14 +121,12 @@ foreach($result as $row) {
         <td><?php echo $row["judul"]; ?></td>
        
         <td><?php echo "<img src='images/$row[gambar]'/>";?> <br>
-        <?php echo $row["isi"]; ?></td></td>
+        <?php echo $row["isi"]; ?></td>
 <td>
         <a href='editI.php?judul=<?php echo $row['judul']; ?>'>edit berita</a>
-        <a href='hapusI.php?id=<?php echo $row['id']; ?>'>hapus</a>
+        <a href='hapusI.php?id=<?php echo $row['id']; ?>'onclick ="return confirm('Anda yakin ingin menghapus')">hapus</a>
         </td>
     </tr>
-
-
 <?php
 }
 }
@@ -133,7 +134,7 @@ foreach($result as $row) {
 </tbody>
 </table>
 </div>        
-</div>
+
                             </div>
                         </div>
                     </div>
@@ -161,12 +162,13 @@ $result = $stmt->fetchAll();
 <table border="1">
 <thead>
     <tr>
-    <th>nama_barang</th>
-    <th>pemilik</th>
-    <th>kontak pemilik</th>
-    <th>tanggal</th>
-    <th>gambar</th>
-    <th>deskripsi</th>
+    <th>Nama Barang</th>
+    <th>Pemilik</th>
+    <th>Kontak Pemilik</th>
+    <th>Tanggal</th>
+    <th>Gambar</th>
+    <th>Deskripsi</th>
+    <th>Aksi</th>
     </tr>
 </thead>
 <tbody>
@@ -191,7 +193,8 @@ foreach($result as $row) {
 }
 ?>
 </tbody>
-</table>                </div>
+</table>                
+</div>
                                 </div>
                             </div>
                         </div>
@@ -218,12 +221,13 @@ $result = $stmt->fetchAll();
 <table border="1">
 <thead>
     <tr>
-    <th>nama_barang</th>
-    <th>penemu</th>
-    <th>kontak penemu</th>
-    <th>tanggal</th>
-    <th>gambar</th>
-    <th>deskripsi</th>
+    <th>Nama Barang</th>
+    <th>Penemu</th>
+    <th>Kontak Penemu</th>
+    <th>Tanggal</th>
+    <th>Gambar</th>
+    <th>Deskripsi</th>
+    <th>Aksi</th>
     </tr>
 </thead>
 <tbody>

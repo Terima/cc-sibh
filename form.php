@@ -1,17 +1,18 @@
 <html>
     <head>
         <link media="all" type="text/css" rel="stylesheet" href="css/cssform.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
 <body>
     
     <div class="atas">
-        <a href="indexadmin.php" style="color:white">Tampil Data</a>
+        <a href="indexadmin.php"><i class="fas fa-home"> Beranda</i></a>
     </div>
     <h1>Tambah Data Barang Hilang</h1>
    
     <form name="frmAdd" action="tambah.php" method="POST" enctype="multipart/form-data">
     
-    <label>Nama Barang: </label><br/>
+    <label>Nama Barang: </label>
     <input type="text" name="nama_barang" required /><br/><br/>
     
     <label>Nama Pemilik : </label><br/>
@@ -28,7 +29,7 @@
 
     <label>Deskripsi: </label><br/>
     <textarea name="deskripsi" required> </textarea>  <br/><br/>
-    
-    <input name="tambahdata" type="submit" value="Tambah" >
+    <button type="submit"> Tambah </button>
+
      </form></body>
     </html>
