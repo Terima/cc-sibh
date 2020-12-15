@@ -29,7 +29,8 @@
 
     <label>Deskripsi: </label><br/>
     <textarea name="deskripsi" required> </textarea>  <br/><br/>
-    <button type="submit"> Tambah </button>
+    
+    <button input name="tambahdata" value="Tambah"> Tambah </button>
 
      </form></body>
     </html>

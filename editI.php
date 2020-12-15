@@ -24,7 +24,8 @@ $result = $stmt->fetch();
     <input type="file" name="gbr" value="<?php echo $result['gbr']; ?>" required/><br/><br/>
     <label>Isi: </label><br/>
     <textarea name="isi"><?php echo $result['isi']; ?></textarea> <br/><br/>
-    <button type="submit"> Save </button>
+    
+    <button input name="save_record" value="Save"> Save </button>
 
 </form>
 </body>

@@ -32,7 +32,8 @@ $result = $stmt->fetch();
     <label>Deskripsi: </label><br/>
     <textarea name="deskripsi"><?php echo $result['deskripsi']; ?></textarea> <br/><br/>
 
-    <button type="submit"> Save </button>
+    
+    <button input name="save_record" value="Save"> Save </button>
 
     
 </form>

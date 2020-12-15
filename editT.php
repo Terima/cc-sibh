@@ -31,7 +31,8 @@ $result = $stmt->fetch();
     <input type="file" name="gbr" value="<?php echo $result['gbr']; ?>" required/><br/><br/>
     <label>Deskripsi: </label><br/>
     <textarea name="deskripsi"><?php echo $result['deskripsi']; ?></textarea> <br/><br/>
-    <button type="submit"> Save </button>
+    
+    <button input name="save_record" value="Save"> Save </button>
 
     
 </form>
