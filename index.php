@@ -97,6 +97,7 @@ https://templatemo.com/tm-528-elegance
                             <div class="title-block animate" data-animate="fadeInUp">
                                 <h2>Informasi</h2>
                             </div>
+                            <div class="gallery-section">
                                             <?php
 $stmt = $pdo_conn->prepare("SELECT * FROM berita ORDER BY id DESC");
 $stmt->execute();
@@ -121,9 +122,11 @@ foreach($result as $row) {
 </tbody>
 </table>
 </div>        
+
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
 
             <?php
@@ -138,6 +141,8 @@ foreach($result as $row) {
                             <div class="title-block animate" data-animate="fadeInUp">
                                 <h2>Barang Hilang</h2>
                             </div>
+                            <div class="gallery-section">
+                                <div class="gallery-list owl-carousel">
                                     <?php
 $stmt = $pdo_conn->prepare("SELECT * FROM barang_hilang ORDER BY id DESC");
 $stmt->execute();
@@ -177,6 +182,7 @@ foreach($result as $row) {
 </tbody>
 </table>
 </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -190,6 +196,8 @@ foreach($result as $row) {
                             <div class="title-block animate" data-animate="fadeInUp">
                                 <h2>Barang Temuan</h2>
                             </div>
+                            <div class="gallery-section">
+                                <div class="gallery-list owl-carousel">
                                     <?php
 $stmt = $pdo_conn->prepare("SELECT * FROM barang_temuan ORDER BY id DESC");
 $stmt->execute();
@@ -228,6 +236,8 @@ foreach($result as $row) {
 ?>
 </tbody>
 </table>
+</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -241,6 +251,8 @@ foreach($result as $row) {
                                 <div class="title-block animate" data-animate="fadeInUp">
                                     <h2>Kontak</h2>
                                 </div>
+                                <div class="contact-section">
+                                    <div class="row">
                                             <div class="contact-box">
                                                 <div class="contact-row">
                                                     <i class="fa fa-map-marker"></i> Jl. Brigadir Jenderal H. Hasan Basry, Banjarmasin, Kalimantan Selatan - 70123
@@ -251,6 +263,8 @@ foreach($result as $row) {
                                                 <div class="contact-row">
                                                     <i class="fa fa-envelope"></i> ft.ulm.ac.id
                                                 </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
