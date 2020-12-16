@@ -39,10 +39,9 @@ body {
   background: #222;
 }
 img {
-  width: 500px;
-  height: 200px;
+  border: 0;
+  max-width: 100%;
 }
-
 html {
   -ms-overflow-style: scrollbar;
 }
