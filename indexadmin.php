@@ -96,8 +96,6 @@ https://templatemo.com/tm-528-elegance
                                 <h2>Informasi</h2>
                                 <a href="formI.html">Tambah Berita dan Himbauan</a>
                             </div>
-                            <div class="gallery-section">
-                                
                                     <?php
 $stmt = $pdo_conn->prepare("SELECT * FROM berita ORDER BY id DESC");
 $stmt->execute();
@@ -139,7 +137,6 @@ foreach($result as $row) {
                         </div>
                     </div>
                 </div>
-            </div>
 
 
 
@@ -151,8 +148,6 @@ foreach($result as $row) {
                                 <h2>Barang Hilang</h2>
                                 <a href="form.php">Tambah barang hilang</a>
                             </div>
-                            <div class="gallery-section">
-                                <div class="gallery-list owl-carousel">
             <?php
 $stmt = $pdo_conn->prepare("SELECT * FROM barang_hilang ORDER BY id DESC");
 $stmt->execute();
@@ -198,9 +193,6 @@ foreach($result as $row) {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="section animated-row" data-section="slide04">
                 <div class="section-inner">
@@ -210,8 +202,6 @@ foreach($result as $row) {
                                 <h2>Barang Temuan</h2>
                                 <a href="formT.html">Tambah barang temuan</a>
                             </div>
-                            <div class="gallery-section">
-                                <div class="gallery-list owl-carousel">
                                 <?php
 $stmt = $pdo_conn->prepare("SELECT * FROM barang_temuan ORDER BY id DESC");
 $stmt->execute();
@@ -258,8 +248,6 @@ foreach($result as $row) {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
         
 
